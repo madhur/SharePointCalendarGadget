@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>EventCal</name>
+  <version>1.0.0.0</version>
+  <author name="Microsoft">
+    <info url="msdn.microsoft.com" />
+  </author>
+  <copyright>&#169; Microsoft Corporation.</copyright>
+  <description>"EventCal" Sidebar gadget sample.</description>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="DatePicker.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+    </host>
+  </hosts>
+  <Module>
+    <ModulePrefs title="changeCalendarGadget"  width="300" height="300" />
+	<Require feature="dynamic-width"/>
+	 <UserPref name="scroll" display_name="Display scrollbar" default_value="auto" datatype="enum">
+    <EnumValue value="auto" display_value="Automatic"/>
+    <EnumValue value="no" display_value="No"/>
+    <EnumValue value="yes" display_value="Yes"/>
+  </UserPref>
+  <Content type="html">
+  <script type="text/javascript">
+  gadgets.util.registerOnLoadHandler(doRender);
+
+  function doRender(){
+    var prefs = new gadgets.Prefs();
+    var scroll = prefs.getString('scroll');
+    var height = 800;
+    var width = 600;
+
+    if (gadgets.window) {
+      var view = gadgets.window.getViewportDimensions();
+      if (view.width) {
+        var width = viewport.width;
+      }
+      if (view.height) {
+        var height = viewport.height;
+      }
+    }
+	
+	var iframe = document.getElementById('appSelect');
+    iframe.setAttribute('width', width + 'px');
+    iframe.setAttribute('height', height + 'px');
+    iframe.setAttribute('frameborder','no');
+    if(scroll){
+      iframe.setAttribute('scrolling', scroll);
+    }
+	
+    }
+  </script>
+  </Content>
+  </Module>
+</gadget>

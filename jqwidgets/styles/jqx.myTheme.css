@@ -1,0 +1,7 @@
+﻿.jqx-calendar-cell-selected{
+    color: #ff0000;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #003399;
+    border-color: #0044cc #0044cc #002a80;
+   
+}

@@ -1,0 +1,34 @@
+﻿.jqx-icon-arrow-left-myTheme
+{
+
+	background-image: url('images/metro-icon-left.png');
+}
+
+.jqx-icon-arrow-right-myTheme
+{
+
+	background-image: url('images/metro-icon-right.png');
+}
+
+.jqx-calendar-cell-myTheme, .jqx-calendar-title-container-myTheme, .calendar-header-myTheme, 
+.jqx-calendar-column-cell-myTheme
+{
+	
+	
+	font-family:verdana;
+}
+
+.jqx-calendar-title-content-myTheme{
+font-size:13px;
+	border:0px;
+	font-weight:bold;
+	font-family:verdana;
+	cursor:none;
+}
+
+.jqx-calendar-cell-today-myTheme
+{
+	background-color:blue;
+	color:white;
+
+}

@@ -1,0 +1,26 @@
+body
+{
+width:2000px;
+height:250px;
+}
+
+#theader
+{
+	font-size:12px;
+	text-align: left;
+}
+
+table#tblappSelect
+{
+	
+}
+
+#appSelect
+{
+	width:250px;
+	height:80px;
+	overflow-x:scroll;
+	overflow-y:scroll;
+}
+
+

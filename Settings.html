@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Unicode" />	
+		<link rel="stylesheet" type="text/css" href="css/settings.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>	
+<script type="text/javascript" src="js/jquery.SPServices-2013.01.min.js"></script>
+<script type="text/javascript" src="js/sugar.min.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxdatetimeinput.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxcalendar.js"></script>
+<script type="text/javascript" src="jqwidgets/globalization/globalize.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxtooltip.js"></script>
+<script type="text/javascript" src="js/new_settings.js"></script>
+<script type="text/javascript" src="js/SettingsManager.js"></script>
+        <title>Calendar Configuration Settings</title>
+    </head>
+	
+    <body  onload="return initLoad();" >
+	<!-- <fieldset> -->
+	<legend >Calendar Configuration</legend>
+	
+		<table id="tblappSelect" width="1000px">
+		<tr>
+			<th id="theader">Input URL</td>
+		</tr>
+		
+		</table>
+		
+		<input type="text" id="appSelect" name="appSelect"/> 
+		<br/> <br/>
+		
+		<table id="tbllistSelect" width="1000px">
+		<tr>
+			<th id="theader">List Name</td>
+		</tr>
+		
+		</table>
+		
+		<input type="text" id="listSelect" name="listSelect"/>
+		<br/> <br/>
+		<table>
+			<tr>
+				<input type="submit" value="Reset" onclick="ResetSelection()">
+			</tr>
+
+		</table>
+		
+    </body>
+</html>
